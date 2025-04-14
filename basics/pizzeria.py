@@ -15,15 +15,7 @@ num_pizzas = len(toppings)
 print(f"We sell {num_pizzas} different kinds of pizza!")
 
 # Step 6: Create the pizza_and_prices list
-pizza_and_prices = [
-    [2, "pepperoni"],
-    [6, "pineapple"],
-    [1, "cheese"],
-    [3, "sausage"],
-    [2, "olives"],
-    [7, "anchovies"],
-    [2, "mushrooms"]
-]
+pizza_and_prices = [[prices[i], toppings[i]] for i in range(len(toppings))]
 
 # Step 7: Print pizza_and_prices
 print("Pizza and Prices:", pizza_and_prices)
